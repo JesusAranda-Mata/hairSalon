@@ -31,19 +31,47 @@ nav li ul {
     display: flex;
     align-items: center;
     padding: 5px 20px;
+    position: sticky;
 }
 
 button {
     background-color: lightskyblue;
     color:midnightblue;
     border-radius: 100%;
+    border-radius: 0%;
+}
+
+@media (max-width: 650px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+            }
+}
+
+@media (max-width: 650px) {
+    nav h1{
+        margin: 0%;
+        border-radius: 25%;
+            }
+}
+
+@media (max-width: 650px) {
+    nav li ul{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        text-shadow: midnightblue;
+        border-radius: 0%;
+        color: white;
+        background-color: rgb(11, 11, 75);
+        font-family: 'Courgette', cursive;
+            }
 }
 
 button:hover {
-    font-size:x-large;
-    position:static;
     text-shadow: midnightblue;
-    border-radius: 30%;
+    border-radius: 0%;
     color: white;
     background-color: rgb(11, 11, 75);
     font-family: 'Courgette', cursive;
@@ -52,6 +80,13 @@ button:hover {
 .margin-setter {
     margin: auto 10%;
 }
+
+@media (max-width: 650px) {
+    .margin-setter {
+        display: flex;
+        flex-direction: column;
+            }
+        }
 
 .slogan {
     border: 2px solid midnightblue;
@@ -71,10 +106,24 @@ button:hover {
     padding-bottom: 20px;
 }
 
+@media (max-width: 650px) {
+    .slogan {
+        display: flex;
+        /* flex-direction: column; */
+        flex-direction: column-reverse;
+            }
+}
+
 .images, .grooms {
     /* border: 2px solid green; */
     display: flex;
     justify-content: space-around;
+}
+
+.samples h2 {
+    font-family: 'Courgette', cursive;
+    background-color: lightskyblue;
+    text-align: center;
 }
 
 .samples .images img{ 
@@ -86,6 +135,21 @@ button:hover {
 
 .grooms p {
     padding: 20px;
+}
+
+@media (max-width: 650px) {
+    .samples {
+        display: flex;
+        flex-direction: column; 
+            }
+}
+
+@media (max-width: 650px) {
+    .samples .images{
+        /* display: flex;
+        flex-direction: column;  */
+        margin-top: 15px;
+            }
 }
 
 .reviews {
@@ -165,3 +229,45 @@ button:hover {
     margin: 10px;
 }
 
+@media (max-width: 650px) {
+    .reviews  {
+        display: flex;
+        flex-direction: column;
+           }
+}
+
+@media (max-width: 650px) {
+    .reviews .other-friends, .other-other-friends {
+        display: flex;
+        flex-direction: column;    
+    }
+}
+
+@media (max-width: 650px) {
+    .reviews .other-other-friends img {
+        height: 100px;
+        position:absolute;
+        margin-top: 35px;
+           }
+}
+
+@media (max-width: 650px) {
+    .reviews .other-other-friends p {
+        position:relative;
+           }
+}
+
+@media (max-width: 650px) {
+    .reviews .other-other-friends {
+        height: 400px;
+        margin-top: 0;
+        position:relative;
+        flex-wrap: wrap;
+           }
+}
+
+@media (max-width: 650px) {
+    .reviews .other-other-friends h4 {
+        position: ;
+    }
+}
